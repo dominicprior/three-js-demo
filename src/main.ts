@@ -10,7 +10,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animate );
 document.body.appendChild( renderer.domElement );
 
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const geometry = new THREE.BoxGeometry( 1, 1, 1, 4, 4, 4 );
 const material = new THREE.RawShaderMaterial( {
   uniforms: {},
   vertexShader: vertexShader,
@@ -21,7 +21,7 @@ const material = new THREE.RawShaderMaterial( {
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 5;
+camera.position.z = 1.5;
 
 function animate() {
   cube.rotation.y += 0.01;
