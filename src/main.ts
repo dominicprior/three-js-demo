@@ -13,12 +13,12 @@ document.body.appendChild( renderer.domElement );
 
 const geometry = new THREE.PlaneGeometry(2,2,4,4);
 // const geometry = new THREE.BoxGeometry( 1, 1, 1, 4, 4, 4 );
-// const material = new THREE.RawShaderMaterial( {
-//   uniforms: {},
-//   vertexShader: vertexShader,
-//   fragmentShader: fragmentShader,
-// });
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
+const material = new THREE.RawShaderMaterial( {
+  uniforms: {},
+  vertexShader: vertexShader,
+  fragmentShader: fragmentShader,
+});
+
 
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
