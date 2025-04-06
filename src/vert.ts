@@ -12,7 +12,7 @@ void main() {
           0, 1, 0, 0,
           0, 0, 1, 0,
           0, 0.3, 0, 1 );
-    m[3][1] = 0.2;
+    m[3][1] = 0.0;
     vUv = uv;
   gl_Position = projectionMatrix * m * modelViewMatrix * vec4(position, 1.);
 }
