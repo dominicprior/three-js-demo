@@ -17,6 +17,8 @@ const material = new THREE.RawShaderMaterial( {
   uniforms: {},
   vertexShader: vertexShader,
   fragmentShader: fragmentShader,
+  wireframe: true,
+  side: THREE.DoubleSide,
 });
 
 
