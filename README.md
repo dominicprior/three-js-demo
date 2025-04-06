@@ -17,3 +17,9 @@ Based on https://www.youtube.com/watch?v=p4BHphMBlFA
 * Delete everything in index.html and main.ts, and replace with the stuff at the end of https://threejs.org/manual/#en/creating-a-scene, but with src="/src/main.ts" instead of src="/main.js"
 * Delete these files: vite.svg, typescript.svg, counter.ts, style.css
 * npm run dev (from the VSCode terminal)
+
+# Adding shaders
+
+Load these two VS Code extensions (recommended by https://www.youtube.com/watch?v=7UvpTTEE1Hs):
+* WebGL GLSL Editor
+* glsl-canvas
