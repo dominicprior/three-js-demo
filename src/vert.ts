@@ -15,5 +15,8 @@ void main() {
     m[3][1] = 0.0;
     vUv = uv;
   gl_Position = projectionMatrix * m * modelViewMatrix * vec4(position, 1.);
+  if (modelViewMatrix[3][2] == -1.0) {
+    gl_Position.x *= 0.5;
+  }
 }
 `;
