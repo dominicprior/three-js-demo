@@ -7,14 +7,8 @@ attribute vec3 normal;
 attribute vec2 uv;
 varying vec2 vUv;
 void main() {
-    mat4 m = mat4(
-          1, 0, 0, 0,
-          0, 1, 0, 0,
-          0, 0, 1, 0,
-          0, 0.3, 0, 1 );
-    m[3][1] = 0.0;
-    vUv = uv;
-  gl_Position = projectionMatrix * m * modelViewMatrix * vec4(position, 1.);
+  vUv = uv;
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.);
   if (modelViewMatrix[3][2] == -1.0) {
     gl_Position.x *= 0.5;
   }
