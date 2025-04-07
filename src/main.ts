@@ -25,7 +25,7 @@ const material = new THREE.RawShaderMaterial( {
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 1.01;
+camera.position.z = 1.00;
 
 // renderer.setAnimationLoop( animate );
 // function animate() {
