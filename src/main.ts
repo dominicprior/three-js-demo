@@ -11,7 +11,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( w, h );
 document.body.appendChild( renderer.domElement );
 
-const geometry = new THREE.PlaneGeometry(2,2,4,4);
+const geometry = new THREE.PlaneGeometry(6,6,12,12);
 // const geometry = new THREE.BoxGeometry( 1, 1, 1, 4, 4, 4 );
 const material = new THREE.RawShaderMaterial( {
   uniforms: {},
