@@ -5,7 +5,7 @@ import { fragmentShader } from './frag';
 const w = 400; // window.innerWidth;
 const h = 400; // window.innerHeight;
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 90, w / h, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 140, w / h, 0.1, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( w, h );
@@ -20,7 +20,7 @@ const material = new THREE.RawShaderMaterial( {
   wireframe: true,
   side: THREE.DoubleSide,
 });
-
+geometry.translate(0, 0, 4);
 
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
