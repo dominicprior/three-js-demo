@@ -23,3 +23,15 @@ Based on https://www.youtube.com/watch?v=p4BHphMBlFA
 Load these two VS Code extensions (recommended by https://www.youtube.com/watch?v=7UvpTTEE1Hs):
 * WebGL GLSL Editor
 * glsl-canvas
+
+# Peeking inside the shaders
+
+I couldn't find any source-level debugger for GLSL, and so I resorted to visual tricks like this:
+```
+  if (modelViewMatrix[3][2] == -1.0) {
+    gl_Position.x *= 0.5;
+  }
+```
+It showed that a `camera.position.z` of `1.0` sets `modelViewMatrix[3][2]` to `-1.0`, like we would expect, given that GLSL matrices are in column-major order.  (In a separate test, I confirmed that the `z` coord of the `position` is set to `-1.0` by the `modelViewMatrix`).
+
+I was surprised by the negative z, until I asked [ChatGPT](https://chatgpt.com/share/67f37b49-8000-800b-a845-25eadcf39fef).
