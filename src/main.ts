@@ -7,7 +7,7 @@ const w = 400; // window.innerWidth;
 const h = 400; // window.innerHeight;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 60, w / h, 0.1, 1000 );
-const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+const light = new THREE.AmbientLight( 0xffffff );
 scene.add( light );
 
 const loader = new GLTFLoader();
