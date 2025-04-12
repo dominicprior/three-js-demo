@@ -19,13 +19,12 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( w, h );
 document.body.appendChild( renderer.domElement );
 
-const geometry = new THREE.PlaneGeometry(6,6,12,12);
+const geometry = new THREE.PlaneGeometry(.5,.5,12,12);
 const material = new THREE.MeshBasicMaterial( { color: 0x00ffe0 } );
-geometry.translate(0, 0, 4);
 
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.set(0, 10, 20);
+camera.position.z = 5;
 
 renderer.render( scene, camera );
