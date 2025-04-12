@@ -11,7 +11,7 @@ const light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );
 
 const loader = new GLTFLoader();
-loader.load('models/smallfoo.glb', function (gltf) {
+loader.load('models/untitled.gltf', function (gltf) {
   console.log(gltf);
   const model = gltf.scene;
   scene.add(model);
