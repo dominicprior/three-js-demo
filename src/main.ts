@@ -36,7 +36,7 @@ geometry.translate(0, 0, 4);
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 10.00;
+camera.position.set(0, 10, 20);
 
 // renderer.setAnimationLoop( animate );
 // function animate() {
