@@ -9,11 +9,9 @@ const light = new THREE.AmbientLight( 0xffffff );
 scene.add( light );
 
 const loader = new GLTFLoader();
-loader.load('models/smallfoo.glb', function (gltf) {
-  const Mesh = gltf.scene;
-  scene.add(Mesh);
-  console.log(gltf);
-});
+
+const astronaut = await loader.loadAsync('./models/smallfoo.glb');
+scene.add(astronaut.scene);
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( w, h );
