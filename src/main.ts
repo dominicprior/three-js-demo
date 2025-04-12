@@ -9,7 +9,7 @@ const light = new THREE.AmbientLight( 0xffffff );
 scene.add( light );
 
 const loader = new GLTFLoader();
-loader.load('models/untitled.gltf', function (gltf) {
+loader.load('models/smallfoo.glb', function (gltf) {
   const Mesh = gltf.scene;
   Mesh.scale.set(0.2,0.2,0.2);
   scene.add(Mesh);
