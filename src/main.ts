@@ -11,11 +11,7 @@ scene.add( light );
 const loader = new GLTFLoader();
 loader.load('models/smallfoo.glb', function (gltf) {
   const Mesh = gltf.scene;
-  Mesh.scale.set(0.2,0.2,0.2);
   scene.add(Mesh);
-  Mesh.position.x = 0;
-  Mesh.position.y = 10;
-  Mesh.position.z = 15;
   console.log(gltf);
 });
 
