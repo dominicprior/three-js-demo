@@ -12,8 +12,10 @@ camera.position.y = 1.50;
 camera.position.z = -3.00;
 camera.lookAt(0, 0, 0);
 
-const light = new THREE.AmbientLight(0xffffff);
-scene.add(light);
+// const light = new THREE.AmbientLight(0xffffff);  // looked rubbish because the sides were as bright as the top.
+// const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );  // looked rubbish because the sides completely black.
+const HemisphereLight = new THREE.HemisphereLight( 0xffffff, 0x000000, 1 );
+scene.add(HemisphereLight);
 
 const loader = new GLTFLoader();
 const astronaut = await loader.loadAsync('./models/spiral_wall_5c.glb');
