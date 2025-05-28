@@ -14,7 +14,7 @@ camera.lookAt(0, 0, 0);
 
 // const light = new THREE.AmbientLight(0xffffff);  // looked rubbish because the sides were as bright as the top.
 // const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );  // looked rubbish because the sides completely black.
-const HemisphereLight = new THREE.HemisphereLight( 0xffffff, 0x000000, 1 );
+const HemisphereLight = new THREE.HemisphereLight( 0xffffff, 0x000000, 5.0 );  // The 5.0 seems to make things less dingy.  Maybe we should apply a gamma?
 scene.add(HemisphereLight);
 
 const loader = new GLTFLoader();
