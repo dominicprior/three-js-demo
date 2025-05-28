@@ -12,7 +12,7 @@ const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
 
 const loader = new GLTFLoader();
-const astronaut = await loader.loadAsync('./models/smallfoo.glb');
+const astronaut = await loader.loadAsync('./models/spiral_wall_5c.glb');
 scene.add(astronaut.scene);
 
 const renderer = new THREE.WebGLRenderer({
