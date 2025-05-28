@@ -1,3 +1,15 @@
+# Intro
+
+This demonstrates loading a blender file and (not!) viewing it using fisheye.
+
+I exported the blender file after doing an apply on the geometry node modifiers.
+(I kept the non-applied version in a previous blender file, spiral_wall_4.blend).
+
+The graphics looked terrible until I added antialiasing.  (I'm not sure what antialiasing three.js is using, but things looked a lot better.
+Mercifully, there didn't seem to be those dark boundaries between colour patches caused by gamma confusion).
+
+It also needed hemisphere light rather than ambient or directional light.  I might be missing some gamma correction trick, but things looked fine once I jacked the hemisphere light intensity up to 5.
+
 # Initial setup for creating a spinning cube
 
 Based on https://www.youtube.com/watch?v=p4BHphMBlFA 
