@@ -3,8 +3,8 @@ import { vertexShader } from './vert';
 import { fragmentShader } from './frag';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-const w = 400; // window.innerWidth;
-const h = 400; // window.innerHeight;
+const w = 1200; // window.innerWidth;
+const h = 900; // window.innerHeight;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(60, w / h, 0.1, 1000);
 camera.position.z = 10.00;
