@@ -35,9 +35,9 @@ scene.add(planeMesh);
 
 renderer.render(scene, camera);
 export { renderer, scene, camera, planeMesh };
-console.log(astronaut.scene.children[0].children[0].geometry);
-globalThis.scene = scene;
-globalThis.camera = camera;
-globalThis.renderer = renderer;
-globalThis.planeMesh = planeMesh;
-globalThis.astronaut = astronaut;
+// console.log(astronaut.scene.children[0].children[0].geometry);
+// globalThis.scene = scene;
+// globalThis.camera = camera;
+// globalThis.renderer = renderer;
+// globalThis.planeMesh = planeMesh;
+// globalThis.astronaut = astronaut;
