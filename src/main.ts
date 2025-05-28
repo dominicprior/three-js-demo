@@ -7,7 +7,11 @@ const w = 1200; // window.innerWidth;
 const h = 900; // window.innerHeight;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(60, w / h, 0.1, 1000);
-camera.position.z = 10.00;
+camera.position.x = -0.10;
+camera.position.y = 1.50;
+camera.position.z = -3.00;
+camera.lookAt(0, 0, 0);
+
 const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
 
