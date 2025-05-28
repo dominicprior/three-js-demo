@@ -15,7 +15,9 @@ const loader = new GLTFLoader();
 const astronaut = await loader.loadAsync('./models/smallfoo.glb');
 scene.add(astronaut.scene);
 
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({
+  antialias: true
+});
 renderer.setSize(w, h);
 document.body.appendChild(renderer.domElement);
 
